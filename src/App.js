@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react'
+import data from './data'
+
 import './App.css';
 
 function App() {
+  const [mode, setMode] = useState(false)
+
+  const toggleTheme = () => {
+    setMode(!mode)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className={ mode ? 'light' : 'dark' }>
+      <header>
+        <div className='headerCenter'>
+          <h1>Dark Mode</h1>
+          <button className='btn' onClick={toggleTheme}>
+            toggle
+          </button>
+        </div>
       </header>
+      <section className='articles'>
+        {data.map((item) => {
+          return <Article key={item.id} {...item} />
+        })}
+      </section>
     </div>
   );
 }
