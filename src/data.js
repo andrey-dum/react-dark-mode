@@ -1,31 +1,31 @@
 const articles = [
   {
     id: 1,
-    title: 'the WET Codbase',
+    title: 'Hooks API Reference – React',
     date: new Date(2020, 9, 4),
     length: 11,
-    snippet: `Come waste your time with me`,
+    snippet: `Hooks are an upcoming feature that lets you use state and other React features without writing a class.`,
   },
   {
     id: 2,
-    title: 'goodby, clean code',
+    title: 'Hello, world',
     date: new Date(2019, 10, 22),
     length: 5,
-    snippet: `Let clean code guide you. Then let it go.`,
+    snippet: `Let's build a first react-app.`,
   },
   {
     id: 3,
-    title: 'my decade in review',
+    title: 'ui/ux design',
     date: new Date(2018, 7, 11),
     length: 5,
-    snippet: `A personal reflection.`,
+    snippet: `UX/UI Animation.`,
   },
   {
     id: 4,
-    title: 'what are the react team principles',
+    title: 'Learn Figma: User Interface Design Essentials',
     date: new Date(2015, 5, 4),
     length: 5,
-    snippet: `UI Before API.`,
+    snippet: `User Interface Design Essentials.`,
   },
 ]
 
